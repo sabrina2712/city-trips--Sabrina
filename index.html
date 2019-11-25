@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .image_container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        grid-gap: 10px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .image1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .image2 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .image3 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .image4 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .image5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="image_container">
+      <figure class="image1">
+        <img src="/images/berlin.jpg" class="berlin_img" />
+      </figure>
+      <figure class="image2">
+        <img src="/images/prague.jpg" class="prague_img" />
+      </figure>
+
+      <figure class="image3">
+        <img src="/images/amsterdam.jpg" class="amsterdam_img" />
+      </figure>
+      <figure class="image4">
+        <img src="/images/san-fran.jpg" class="san-fan_img" />
+      </figure>
+      <figure class="image5">
+        <img src="/images/paris.jpg" class="paris_img" />
+      </figure>
+    </section>
+  </body>
+</html>
